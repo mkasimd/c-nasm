@@ -2,24 +2,14 @@
 title: 'ASM Tutorial'
 published: true
 taxonomy:
-    category: docs
-    tag: ''
+    category:
+        - docs
 process:
     markdown: true
     twig: true
 visible: true
 textsize:
-    scale: ''
-    modifier: '1'
-style:
-    header-font-family: ''
-    header-color: ''
-    block-font-family: ''
-    block-color: ''
-    background-color: ''
-    background-image: ''
-    background-size: ''
-    background-repeat: ''
+    modifier: 1
 author: 'M. Kasim'
 ---
 
