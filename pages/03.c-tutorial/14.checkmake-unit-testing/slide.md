@@ -1,5 +1,9 @@
 ---
 title: 'Checkmake Unit Testing'
+taxonomy:
+    category: docs
+    tag: ''
+visible: true
 author: 'M. Kasim'
 ---
 
