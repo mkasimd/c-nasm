@@ -1,11 +1,29 @@
 ---
 title: 'C Syntax'
 textsize:
-    modifier: 1
+    scale: ''
+    modifier: '1'
+style:
+    header-font-family: ''
+    header-color: ''
+    block-font-family: ''
+    block-color: ''
+    background-color: ''
+    background-image: ''
+    background-size: ''
+    background-repeat: ''
+    justify-content: ''
+    align-items: ''
 taxonomy:
     category:
         - docs
+class: ''
+footer: ''
 visible: true
+presentation:
+    content: ''
+    parser: ''
+    styles: ''
 author: 'M. Kasim'
 ---
 
