@@ -1,8 +1,10 @@
 ---
 title: 'C Syntax'
+textsize:
+    modifier: 1
 taxonomy:
-    category: docs
-    tag: ''
+    category:
+        - docs
 visible: true
 author: 'M. Kasim'
 ---
