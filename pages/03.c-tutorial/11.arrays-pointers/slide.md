@@ -2,8 +2,12 @@
 title: 'Arrays and Pointers'
 media_order: 'aryptrstring.gif,array1.gif,array2.gif'
 date: '06-01-2019 23:00'
+taxonomy:
+    category: docs
+    tag: ''
 never_cache_twig: false
 cache_enable: true
+visible: true
 author: 'M. Kasim'
 ---
 
