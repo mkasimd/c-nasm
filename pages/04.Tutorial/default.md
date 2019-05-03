@@ -1,5 +1,17 @@
 ---
 title: 'ASM Tutorial'
+textsize:
+    scale: ''
+    modifier: '1'
+style:
+    header-font-family: ''
+    header-color: ''
+    block-font-family: ''
+    block-color: ''
+    background-color: ''
+    background-image: ''
+    background-size: ''
+    background-repeat: ''
 published: true
 taxonomy:
     category:
@@ -8,8 +20,6 @@ process:
     markdown: true
     twig: true
 visible: true
-textsize:
-    modifier: 1
 author: 'M. Kasim'
 ---
 
