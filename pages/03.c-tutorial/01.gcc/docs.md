@@ -1,14 +1,25 @@
 ---
 title: 'GCC Compiler'
+textsize:
+    scale: ''
+    modifier: '1'
 style:
+    header-font-family: ''
+    header-color: ''
+    block-font-family: ''
+    block-color: ''
+    background-color: ''
+    background-image: ''
+    background-size: ''
+    background-repeat: ''
     justify-content: ''
     align-items: ''
 taxonomy:
     category:
         - docs
+visible: true
 class: ''
 footer: ''
-visible: true
 presentation:
     content: ''
     parser: ''
