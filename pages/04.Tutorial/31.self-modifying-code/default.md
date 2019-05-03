@@ -23,11 +23,11 @@ int main(void){
 _modifying.asm_
 ```nasm
 segment .data
-	global foo
+    global foo
     global change_code
     
 foo:
-	mov eax, 10
+    mov eax, 10
     ret
     
 change_code:
