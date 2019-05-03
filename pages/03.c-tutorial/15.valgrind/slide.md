@@ -1,5 +1,9 @@
 ---
 title: 'GDB & Valgrind'
+taxonomy:
+    category: docs
+    tag: ''
+visible: true
 author: 'M. Kasim'
 ---
 
