@@ -1,11 +1,12 @@
 ---
 title: 'C Tutorial'
 taxonomy:
-    category:
-        - docs
+    category: docs
+    tag: ''
 process:
     markdown: true
     twig: true
+visible: true
 author: 'M. Kasim'
 ---
 
