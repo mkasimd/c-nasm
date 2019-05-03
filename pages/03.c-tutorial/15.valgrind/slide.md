@@ -1,21 +1,11 @@
 ---
 title: 'GDB & Valgrind'
-textsize:
-    scale: ''
-    modifier: '1'
-style:
-    header-font-family: ''
-    header-color: ''
-    block-font-family: ''
-    block-color: ''
-    background-color: ''
-    background-image: ''
-    background-size: ''
-    background-repeat: ''
 taxonomy:
-    category:
-        - docs
+    category: docs
+    tag: ''
 visible: true
+textsize:
+    modifier: 1
 author: 'M. Kasim'
 ---
 
