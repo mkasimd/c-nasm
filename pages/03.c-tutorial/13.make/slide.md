@@ -1,5 +1,9 @@
 ---
 title: Make
+taxonomy:
+    category: docs
+    tag: ''
+visible: true
 author: 'M. Kasim'
 ---
 
