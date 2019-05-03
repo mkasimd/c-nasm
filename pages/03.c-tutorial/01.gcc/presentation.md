@@ -12,7 +12,7 @@ author: 'M. Kasim'
 !!! NOTE: The following example assumes the resulting program consists of the C programs `program.c` and `program2.c`. If you have only one or more than two C files to compile, you may add or remove the passed arguments accordingly.
 
 
-[presentation="presentations/"]## Compile and Link
+## Compile and Link
 The most common way to compile is to compile and link the compiled object files in one step, receiving an executable file right away. This can be done by the following command:
 
 ```sh
