@@ -1,5 +1,9 @@
 ---
 title: 'Types, Structs & Enums'
+taxonomy:
+    category: docs
+    tag: ''
+visible: true
 author: 'M. Kasim'
 ---
 
