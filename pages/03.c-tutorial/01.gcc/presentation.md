@@ -1,18 +1,18 @@
 ---
 title: 'GCC Compiler'
 taxonomy:
-    category: docs
-    tag: ''
+    category:
+        - docs
 visible: true
 author: 'M. Kasim'
 ---
 
-Before we start programming and compiling, it is helpful to learn more about the compiler we are using. The GCC C compiler has multiple options to achieve both compiling as well as linking of C programs. The following parts will show some of the options.
+[presentation="presentations/"]Before we start programming and compiling, it is helpful to learn more about the compiler we are using. The GCC C compiler has multiple options to achieve both compiling as well as linking of C programs. The following parts will show some of the options.
 
 !!! NOTE: The following example assumes the resulting program consists of the C programs `program.c` and `program2.c`. If you have only one or more than two C files to compile, you may add or remove the passed arguments accordingly.
 
 
-## Compile and Link
+[presentation="presentations/"]## Compile and Link
 The most common way to compile is to compile and link the compiled object files in one step, receiving an executable file right away. This can be done by the following command:
 
 ```sh
