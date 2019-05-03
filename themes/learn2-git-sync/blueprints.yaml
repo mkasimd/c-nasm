@@ -101,9 +101,15 @@ form:
       default: default
       options:
         default: Default
+        arctic: Arctic
+        grey: Grey
+        gold: Gold
         hoth: Hoth
         longyearbyen: Longyearbyen
         spitsbergen: Spitsbergen (Hoth v2)
+        sunrise: Sunrise
+        navy_sunrise: Navy Sunrise
+        metal: Metal
 
     top_level_version:
         type: toggle
