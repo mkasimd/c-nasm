@@ -1,5 +1,13 @@
 ---
 title: 'ASM Tutorial'
+published: true
+taxonomy:
+    category: docs
+    tag: ''
+process:
+    markdown: true
+    twig: true
+visible: true
 textsize:
     scale: ''
     modifier: '1'
@@ -12,13 +20,6 @@ style:
     background-image: ''
     background-size: ''
     background-repeat: ''
-published: true
-taxonomy:
-    category:
-        - docs
-process:
-    markdown: true
-    twig: true
 author: 'M. Kasim'
 ---
 
