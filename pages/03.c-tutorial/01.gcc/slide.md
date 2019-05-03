@@ -1,13 +1,22 @@
 ---
 title: 'GCC Compiler'
+style:
+    justify-content: ''
+    align-items: ''
 taxonomy:
     category:
         - docs
+class: ''
+footer: ''
 visible: true
+presentation:
+    content: ''
+    parser: ''
+    styles: ''
 author: 'M. Kasim'
 ---
 
-[presentation="presentations/"]Before we start programming and compiling, it is helpful to learn more about the compiler we are using. The GCC C compiler has multiple options to achieve both compiling as well as linking of C programs. The following parts will show some of the options.
+Before we start programming and compiling, it is helpful to learn more about the compiler we are using. The GCC C compiler has multiple options to achieve both compiling as well as linking of C programs. The following parts will show some of the options.
 
 !!! NOTE: The following example assumes the resulting program consists of the C programs `program.c` and `program2.c`. If you have only one or more than two C files to compile, you may add or remove the passed arguments accordingly.
 
