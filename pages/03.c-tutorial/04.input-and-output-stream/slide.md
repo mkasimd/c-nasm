@@ -1,8 +1,12 @@
 ---
 title: 'Input & Output Stream'
+taxonomy:
+    category: docs
+    tag: ''
 jscomments:
     active: true
     provider: disqus
+visible: true
 author: 'M. Kasim'
 ---
 
