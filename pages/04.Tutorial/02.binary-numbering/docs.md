@@ -46,7 +46,7 @@ Now read the **mod** values bottom-up and wite down as following:
 
 
 ## Signed Binary Integers
-It is also possible to represent negative integer numbers whereas the last bit (or rather the "first" leftmost bit<sup>[\[1\]](#leftmostbit)</sup>) is the sign bit which is set to 1 if and only if the number is a negative number. Thus, an n-bit signed integer can be a number between -2^(n-1) and 2^(n-1)-1.
+It is also possible to represent negative integer numbers whereas the last bit (or rather the "first" leftmost bit<sup name="leftmostbittext">[\[1\]](#leftmostbit)</sup>) is the sign bit which is set to 1 if and only if the number is a negative number. Thus, an n-bit signed integer can be a number between -2^(n-1) and 2^(n-1)-1.
 
 If you want to write `74` in signed integers (in 2's complement), it will result in `0100 1010`. 
 Now let us write `-74` decimal in 2's complement.
@@ -100,4 +100,4 @@ As you can see, `0,825 -> 0,8249999881`, meaning the floating point numbers are 
 -----
 Footnotes:
 
-<a name="leftmostbit">[1]</a>: the term "first" is written in inverted commas for a reason here as it's the first bit when reading left-to-right like we usually do, but in Computer Science, the 0-th bit is the first bit actually.
+<a name="leftmostbit">[\[1\]](#leftmostbittext)</a>: the term "first" is written in inverted commas for a reason here as it's the first bit when reading left-to-right like we usually do, but in Computer Science, the 0-th bit is the first bit actually.
