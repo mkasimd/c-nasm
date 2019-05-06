@@ -43,7 +43,6 @@ neg_return:
     mov eax, [ebp - 4]
     leave
     ret
-    ret
 ```
 
 !!! NOTE: The multiplication `int mult(int value, int n) { return value * 2^n}` can be done similarly, whereas `shr` should be replaced by `shl` and vice versa.
