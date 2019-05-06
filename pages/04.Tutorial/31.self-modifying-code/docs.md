@@ -34,7 +34,7 @@ change_code:
     mov eax, [foo+1]
     mov ecx, eax
     neg ecx
-    mov dword [func+1], ecx
+    mov dword [foo+1], ecx
     ret
 ```
 
