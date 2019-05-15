@@ -4,10 +4,8 @@ markdown:
     extra: true
 process:
     markdown: true
-    twig: true
+    twig: false
 ---
-
-<a class="button" href="{{ base_url_relative }}/random"><i class="fa fa-retweet"></i> I'm Feeling Lucky!</a>
 
 ## Legal and Privacy Notes
 This website is owned and created by M. Kasim Doenmez.
