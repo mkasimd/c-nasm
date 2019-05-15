@@ -7,6 +7,8 @@ process:
     twig: false
 ---
 
+<a class="button" href="{{ base_url_relative }}/random"><i class="fa fa-retweet"></i> I'm Feeling Lucky!</a>
+
 ## Legal and Privacy Notes
 This website is owned and created by M. Kasim Doenmez.
 There are cookies used throughout the site, but those cookies are not used for any tracking means, nor are any information shared with any third parties by us with an exception of [Cloudflare, Inc.](https://www.cloudflare.com) and [Disqus](https://disqus.com). These cookies are solely functional cookies which are required for the elements on the site to function properly. You may delete them in your browser or prohibit saving of cookies by your browser if you do not agree on our cookie policy, while we cannot guarantee a fluent functionality if you do so.
