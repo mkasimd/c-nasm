@@ -6,7 +6,7 @@ author: 'M. Kasim'
 
 !!!! Look at the [Arrays and Pointers in C](../../c-tutorial/arrays-pointers) section to understand the difference between Arrays and Pointers. Also have a look at the [Low Level Look into Arrays and Pointers](../../c-tutorial/arrays-pointers#lolelook) there.
 
-Basically, we have been using arrays quite a few times now (e,g, in the [Hello World](../hello-world) program) but also pointers (e.g. in the [Print Functions](../print-functions)). Both the `char* string` pointer and the `char string[]` array are **similar, yet different** in C. Also, an `int arr[]` array is not much different from `char string[]` except for it not being necessarily null terminated.
+Basically, we have been using arrays quite a few times now (e.g. in the [Hello World](../hello-world) program) but also pointers (e.g. in the [Print Functions](../print-functions)). Both the `char* string` pointer and the `char string[]` array are **similar, yet different** in C. Also, an `int arr[]` array is not much different from `char string[]` except for it not being necessarily null terminated.
 
 To have a general understanding on Pointers `p` and Arrays `a`, look at the following picture:
 ![Array and Pointer](arrptr.png)
