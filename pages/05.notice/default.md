@@ -1,5 +1,7 @@
 ---
 title: Notice
+markdown:
+    extra: true
 process:
     markdown: true
     twig: false
