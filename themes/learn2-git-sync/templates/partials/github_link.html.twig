@@ -1,4 +1,5 @@
 {% if theme_config.github.tree  %}
+  <a class="github-link">{{ snappygrav( page.route ) }}</a>
   {% set git_repo_link_url = theme_config.github.tree %}
   {% if 'github' in git_repo_link_url %}
     {% set git_repo_link_icon = "github" %}
@@ -41,9 +42,9 @@
       {% set git_repo_link_icon = "bitbucket" %}
       {% set git_repo_edit_link_url = git_sync_repo_link ~ 'src/master' ~ (page.filePathClean)|replace({'user/':'/'}) %}
     {% else %}
-	    {% set git_repo_link_icon = "git" %}
+            {% set git_repo_link_icon = "git" %}
       {% set git_repo_edit_link_url = git_sync_repo_link ~ 'blob/master' ~ (page.filePathClean)|replace({'user/':'/'}) %}
-	  {% endif %}
+          {% endif %}
       {% if theme_config.github.icon %}
         {% set git_repo_link_icon = theme_config.github.icon %}
       {% endif %}
