@@ -1,5 +1,5 @@
 name: Learn2 Git Sync
-version: 1.5.2
+version: 1.5.4
 description: "A customized version of the Learn2 theme for use with the Learn2 with Git Sync skeleton package. Includes selectable visual styles."
 icon: git
 author:
@@ -101,15 +101,9 @@ form:
       default: default
       options:
         default: Default
-        arctic: Arctic
-        grey: Grey
-        gold: Gold
         hoth: Hoth
         longyearbyen: Longyearbyen
         spitsbergen: Spitsbergen (Hoth v2)
-        sunrise: Sunrise
-        navy_sunrise: Navy Sunrise
-        metal: Metal
 
     top_level_version:
         type: toggle

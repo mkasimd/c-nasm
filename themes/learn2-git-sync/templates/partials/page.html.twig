@@ -3,16 +3,4 @@
     <p>
     	{{ page.content|raw }}
     </p>
-
-    <div align='right'><i class='fa fa-eye'> </i> {{ viewcounts[page.route] }}</div>
-
-    <p>
-      {% if config.plugins.jscomments.enabled %}
-        {{ jscomments()|raw }}
-      {% endif %}
-    </p>
-</div>
-
-<div id="footer">
-    <p>&#169;2019 C & NASM Tutorials by M. Kasim Doenmez</p>
 </div>

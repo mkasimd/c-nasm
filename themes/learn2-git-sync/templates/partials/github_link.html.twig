@@ -41,9 +41,9 @@
       {% set git_repo_link_icon = "bitbucket" %}
       {% set git_repo_edit_link_url = git_sync_repo_link ~ 'src/master' ~ (page.filePathClean)|replace({'user/':'/'}) %}
     {% else %}
-            {% set git_repo_link_icon = "git" %}
+	    {% set git_repo_link_icon = "git" %}
       {% set git_repo_edit_link_url = git_sync_repo_link ~ 'blob/master' ~ (page.filePathClean)|replace({'user/':'/'}) %}
-          {% endif %}
+	  {% endif %}
       {% if theme_config.github.icon %}
         {% set git_repo_link_icon = theme_config.github.icon %}
       {% endif %}
@@ -52,5 +52,4 @@
       {{ 'THEME_LEARN2_GIT_EDIT_THIS_PAGE'|t }}</a>
     {% endif %}
   {% endif %}
-  <a class="github-link">{{ snappygrav( page.route ) }}</a>
 {% endif %}
