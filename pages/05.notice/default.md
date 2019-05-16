@@ -1,19 +1,21 @@
 ---
 title: Notice
-markdown:
-    extra: true
 process:
     markdown: true
     twig: false
+markdown:
+    extra: true
 ---
 
 ## Legal and Privacy Notes
 This website is owned and created by M. Kasim Doenmez.
-There are cookies used throughout the site, but those cookies are not used for any tracking means, nor are any information shared with any third parties by us with an exception of [Cloudflare, Inc.](https://www.cloudflare.com) and [Disqus](https://disqus.com). These cookies are solely functional cookies which are required for the elements on the site to function properly. You may delete them in your browser or prohibit saving of cookies by your browser if you do not agree on our cookie policy, while we cannot guarantee a fluent functionality if you do so.
+There are cookies used throughout the site, but those cookies are not used for any tracking means by us, nor are any information shared with any third parties by us with an exception of [Cloudflare, Inc.](https://www.cloudflare.com) and [Disqus](https://disqus.com). These cookies are solely functional cookies which are required for the elements on the site to function properly. You may delete them in your browser or prohibit saving of cookies by your browser if you do not agree on our cookie policy, while we cannot guarantee a fluent functionality if you do so.
 
-This site may use Cloudflare's CDN network and DNS servers to offer you with better accessability of our services. So you may be connected to both our and Cloudflare's servers and your data such as your IP address as well as your session ID may be received by both and may be stored to offer a fluent service. If you do not consent on using Cloudflare as an intermediate between you and our server, you may add a host or DNS entry to forward any requests on this domain to this server's IP address directly. If you see the TLS certificate to be issued by Let's Encrypt specifically for this domain, it means you are connected to our server without Cloudflare's CDN.
+This site may use Cloudflare's CDN network and DNS servers to offer you with better accessability of our services. So you may be connected to both our and Cloudflare's servers and your data such as your IP address as well as your session ID may be received by both and may be stored to offer a fluent service. If you do not consent on using Cloudflare as an intermediate between you and our server, you may add a host or DNS entry to forward any requests on this domain to this server's IP address directly. If you see the TLS certificate to be issued by Let's Encrypt specifically for this domain, it means you are connected to our server without Cloudflare's CDN. Independently, we might use Cloudflare CDNJS and Google Hosted Libraries to load some elements (such as well-known scripts; mainly functional) externally through their more balanced network.
 
-Additionally, this site uses Disqus for you to comment on the tutorials according to the below Commenting Policy. We decided to use Disqus instead of having to manage users and comments by ourselves due to maintainability and accessability reasons, especially as many of you will probably have a Disqus account ready or it can be created easily. The comment functionality is added via scripts and the particular comment section won't have any effect on the site's content, so feel free to block Disqus, if you are concerned by that.
+Additionally, this site uses Disqus for you to comment on the tutorials according to the below Commenting Policy. We decided to use Disqus instead of having to manage users and comments by ourselves due to maintainability and accessability reasons, especially as many of you will probably have a Disqus account ready or it can be created easily. Disqus may enable third party cookies for ads and tracking. However, as the comment functionality is added via scripts and the particular comment section won't have any effect on the site's content, feel free to block Disqus if you are concerned by that.
+
+Please also note that your browser most likely lets you turn off tracking cookies or third party cookies in particular. We highly encourage you to make use of these functions to protect your privacy throughout the web in general. To give our visitors control over their data, we have also enabled means for you to decide on which sources to accept external elements from for which purpose on our website. The website should work pretty much fine even without Google, Cloudflare and Disqus, though some functions might be limited if you disable them.
 
 
 ## Commenting Policy ## {#comments}
@@ -43,7 +45,7 @@ All contents on this site are either written by myself or are edited and / or ta
 [Heinrich Heine Universität Düsseldorf](https://www.cs.hhu.de/).
 
 
-For personal, production or any other use of those, please refer to the licensing terms of the respective source. As for my own codes, you may copy and use them freely, while I'd appreciate a linking to this website or to the respective section.
+For personal, production or any other use of those, please refer to the licensing terms of the respective source. As for my own codes, you may copy and use them freely, while I'd appreciate a linking to this website or to the respective section. The website and its content can be seen in the [GitHub Repository](https://github.com/mkasimd/c-nasm) and has been published under the open source MIT license.
 
 This site has been created using the [GRAV](https://getgrav.org) content management system. The sources of GRAV as well as details on it may be found on the previous link. GRAV is licensed under the open source [MIT licensing](https://github.com/getgrav/grav/blob/develop/LICENSE.txt).
 
