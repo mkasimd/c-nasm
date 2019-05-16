@@ -1,5 +1,4 @@
 {% if theme_config.github.tree  %}
-  <a class="github-link">{{ snappygrav( page.route ) }}</a>
   {% set git_repo_link_url = theme_config.github.tree %}
   {% if 'github' in git_repo_link_url %}
     {% set git_repo_link_icon = "github" %}
@@ -53,4 +52,5 @@
       {{ 'THEME_LEARN2_GIT_EDIT_THIS_PAGE'|t }}</a>
     {% endif %}
   {% endif %}
+  <a class="github-link">{{ snappygrav( page.route ) }}</a>
 {% endif %}
