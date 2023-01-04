@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+
+<html class="no-js hasSidebar hasPageActions hasBreadcrumb conceptual" lang="en-us" dir="ltr" data-authenticated="false" data-target="docs">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta property="og:title" content="x64 Architecture" />
+	<meta property="og:image" content="https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/images/microsoft-header.png" />
+
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@docsmsft" />
+	<meta name="twitter:title" content="x64 Architecture" />
+	<meta name="twitter:description" content="x64 Architecture" />
+	<meta name="twitter:image" content="https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/images/microsoft-header.png" />
+	<meta name="twitter:image:alt" content="Microsoft Logo" />
+
+		<meta name="Search.Product" content="eADQiWindows 10XVcnh" />
+<meta name="ROBOTS" content="INDEX, FOLLOW" />
+<meta name="breadcrumb_path" content="/windows-hardware/drivers/breadcrumbs/toc.json" />
+<meta name="uhfHeaderId" content="MSDocsHeader-WinHW" />
+<meta name="ms.assetid" content="6c0d92d5-cb16-4909-bae5-39fc5c15f736" />
+<meta name="description" content="x64 Architecture" />
+<meta name="ms.author" content="domars" />
+<meta name="keywords" content="x64 processor, architecture" />
+<meta name="keywords" content="registers, on an x64 processor" />
+<meta name="keywords" content="x64 processor, registers" />
+<meta name="ms.topic" content="article" />
+<meta name="ms.date" content="03/16/2018" />
+<meta name="ms.technology" content="windows-devices" />
+<meta name="ms.prod" content="windows-hardware" />
+<meta name="search.ms_sitename" content="Docs" />
+<meta name="search.ms_docsetname" content="wdkdocs" />
+<meta name="version" content="0" />
+<meta name="locale" content="en-us" />
+<meta name="site_name" content="Docs" />
+<meta name="search.ms_product" content="Win" />
+<meta name="depot_name" content="Win.wdkdocs" />
+<meta name="author" content="DOMARS" />
+<meta name="updated_at" content="2018-03-16 10:15 PM" />
+<meta name="gitcommit" content="https://cpubwin.visualstudio.com/DefaultCollection/drivers/_git/drivers/commit/8402be6513bf18e60c159a4a68cc8a4db1184ef1?path=%2fwindows-driver-docs-pr%2fdebugger%2fx64-architecture.md&amp;_a=contents" />
+<meta name="original_content_git_url" content="https://cpubwin.visualstudio.com/DefaultCollection/drivers/_git/drivers?path=%2fwindows-driver-docs-pr%2fdebugger%2fx64-architecture.md&amp;version=GBlive&amp;_a=contents" />
+<meta name="document_id" content="dc07ad07-7d1c-e42d-506d-de67e4a02494" />
+<meta name="document_version_independent_id" content="ed140094-1331-1502-6618-158307cd73f3" />
+<meta name="page_type" content="conceptual" />
+<meta name="toc_rel" content="TOC.json" />
+<meta name="pdf_url_template" content="https://docs.microsoft.com/pdfstore/en-us/Win.wdkdocs/{branchName}{pdfName}" />
+<meta name="word_count" content="628" />
+
+	<meta name="scope" content="Drivers" />
+<link href="https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/x64-architecture" rel="canonical">
+	<title>x64 Architecture | Microsoft Docs</title>
+
+		<link rel="stylesheet" href="/_themes/docs.theme/master/en-us/_themes/css/60f52f8e.site-ltr.css ">
+
+	<link rel="stylesheet" href="/_themes/docs.theme/master/en-us/_themes/css/13bd0ab4.conceptual.css ">
+
+<style type="text/css" media="screen">
+
+table{
+border-collapse:collapse;
+border:1px solid #FF0000;
+}
+
+table td{
+border:1px solid #FF0000;
+}
+</style>
+
+	<script>
+	var msDocs = {
+		data:{
+			contentLocale: 'en-us',
+			contentDir: 'ltr',
+			userLocale: 'en-us',
+			userDir: 'ltr',
+			pageTemplate: 'Conceptual',
+			brand: '',
+			context: {
+
+			},
+			hasComments: true,
+			feedbackSystem: 'GitHub',
+			feedbackGitHubRepo: 'MicrosoftDocs/windows-driver-docs',
+			feedbackProductUrl: 'https://wpdev.uservoice.com/',
+			contentGitUrl: 'https://github.com/MicrosoftDocs/windows-driver-docs/blob/staging/windows-driver-docs-pr/debugger/x64-architecture.md',
+			
+			forceVersionPicker:false		},
+		functions:{},
+		settings:{
+			extendBreadcrumb: false,
+			enableUHFPPE: false
+		}
+	};
+	if (!('Promise' in window && 'resolve' in window.Promise && 'reject' in window.Promise && 'all' in window.Promise && 'race' in window.Promise)) {
+		document.write('<script src="/_themes/docs.theme/master/en-us/_themes/global/js/6ee34c01.bluebird.min.js"><\/script>');
+	}
+	if (typeof fetch !== 'function') {
+		document.write('<script src="/_themes/docs.theme/master/en-us/_themes/global/js/d9fc435c.fetch.min.js"><\/script>');
+	}
+	</script>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.4.min.js"></script>
+	<script src="/_themes/docs.theme/master/en-us/_themes/global/js/4fed73b6.global.min.js"></script>
+
+</head>
+
+<body lang="en-us" dir="ltr">
+
+
+		<div class="primary-holder">
+
+			<main id="main" role="main" class="content" data-bi-name="content" lang="en-us" dir="ltr">
+
+
+				<h1 id="x64-architecture" sourcefile="debugger/x64-architecture.md" sourcestartlinenumber="13" sourceendlinenumber="13">x64 Architecture</h1>
+
+						<nav id="center-doc-outline" class="doc-outline" data-bi-name="intopic toc" role="navigation" aria-label="On page navigation">
+							<h3>In this article</h3>
+						</nav>
+
+				<!-- <content> -->
+					
+<h2 id="span-idddkx64architecturedbgspanspan-idddkx64architecturedbgspan"><span id="ddk_x64_architecture_dbg"></span><span id="DDK_X64_ARCHITECTURE_DBG"></span></h2>
+<p>The x64 architecture is a backwards-compatible extension of x86. It provides a legacy 32-bit mode, which is identical to x86, and a new 64-bit mode.</p>
+<p>The term &quot;x64&quot; includes both AMD 64 and Intel64. The instruction sets are close to identical.</p>
+<h3 id="span-idregistersspanspan-idregistersspanspan-idregistersspanregisters"><span id="Registers"></span><span id="registers"></span><span id="REGISTERS"></span>Registers</h3>
+<p>x64 extends x86&#39;s 8 general-purpose registers to be 64-bit, and adds 8 new 64-bit registers. The 64-bit registers have names beginning with &quot;r&quot;, so for example the 64-bit extension of <strong>eax</strong> is called <strong>rax</strong>. The new registers are named <strong>r8</strong> through <strong>r15</strong>.</p>
+<p>The lower 32 bits, 16 bits, and 8 bits of each register are directly addressable in operands. This includes registers, like <strong>esi</strong>, whose lower 8 bits were not previously addressable. The following table specifies the assembly-language names for the lower portions of 64-bit registers.</p>
+<table>
+<colgroup>
+<col width="25%">
+<col width="25%">
+<col width="25%">
+<col width="25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">64-bit register</th>
+<th align="left">Lower 32 bits</th>
+<th align="left">Lower 16 bits</th>
+<th align="left">Lower 8 bits</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><p><strong>rax</strong></p></td>
+<td align="left"><p><strong>eax</strong></p></td>
+<td align="left"><p><strong>ax</strong></p></td>
+<td align="left"><p><strong>al</strong></p></td>
+</tr>
+<tr class="even">
+<td align="left"><p><strong>rbx</strong></p></td>
+<td align="left"><p><strong>ebx</strong></p></td>
+<td align="left"><p><strong>bx</strong></p></td>
+<td align="left"><p><strong>bl</strong></p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p><strong>rcx</strong></p></td>
+<td align="left"><p><strong>ecx</strong></p></td>
+<td align="left"><p><strong>cx</strong></p></td>
+<td align="left"><p><strong>cl</strong></p></td>
+</tr>
+<tr class="even">
+<td align="left"><p><strong>rdx</strong></p></td>
+<td align="left"><p><strong>edx</strong></p></td>
+<td align="left"><p><strong>dx</strong></p></td>
+<td align="left"><p><strong>dl</strong></p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p><strong>rsi</strong></p></td>
+<td align="left"><p><strong>esi</strong></p></td>
+<td align="left"><p><strong>si</strong></p></td>
+<td align="left"><p><strong>sil</strong></p></td>
+</tr>
+<tr class="even">
+<td align="left"><p><strong>rdi</strong></p></td>
+<td align="left"><p><strong>edi</strong></p></td>
+<td align="left"><p><strong>di</strong></p></td>
+<td align="left"><p><strong>dil</strong></p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p><strong>rbp</strong></p></td>
+<td align="left"><p><strong>ebp</strong></p></td>
+<td align="left"><p><strong>bp</strong></p></td>
+<td align="left"><p><strong>bpl</strong></p></td>
+</tr>
+<tr class="even">
+<td align="left"><p><strong>rsp</strong></p></td>
+<td align="left"><p><strong>esp</strong></p></td>
+<td align="left"><p><strong>sp</strong></p></td>
+<td align="left"><p><strong>spl</strong></p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p><strong>r8</strong></p></td>
+<td align="left"><p><strong>r8d</strong></p></td>
+<td align="left"><p><strong>r8w</strong></p></td>
+<td align="left"><p><strong>r8b</strong></p></td>
+</tr>
+<tr class="even">
+<td align="left"><p><strong>r9</strong></p></td>
+<td align="left"><p><strong>r9d</strong></p></td>
+<td align="left"><p><strong>r9w</strong></p></td>
+<td align="left"><p><strong>r9b</strong></p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p><strong>r10</strong></p></td>
+<td align="left"><p><strong>r10d</strong></p></td>
+<td align="left"><p><strong>r10w</strong></p></td>
+<td align="left"><p><strong>r10b</strong></p></td>
+</tr>
+<tr class="even">
+<td align="left"><p><strong>r11</strong></p></td>
+<td align="left"><p><strong>r11d</strong></p></td>
+<td align="left"><p><strong>r11w</strong></p></td>
+<td align="left"><p><strong>r11b</strong></p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p><strong>r12</strong></p></td>
+<td align="left"><p><strong>r12d</strong></p></td>
+<td align="left"><p><strong>r12w</strong></p></td>
+<td align="left"><p><strong>r12b</strong></p></td>
+</tr>
+<tr class="even">
+<td align="left"><p><strong>r13</strong></p></td>
+<td align="left"><p><strong>r13d</strong></p></td>
+<td align="left"><p><strong>r13w</strong></p></td>
+<td align="left"><p><strong>r13b</strong></p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p><strong>r14</strong></p></td>
+<td align="left"><p><strong>r14d</strong></p></td>
+<td align="left"><p><strong>r14w</strong></p></td>
+<td align="left"><p><strong>r14b</strong></p></td>
+</tr>
+<tr class="even">
+<td align="left"><p><strong>r15</strong></p></td>
+<td align="left"><p><strong>r15d</strong></p></td>
+<td align="left"><p><strong>r15w</strong></p></td>
+<td align="left"><p><strong>r15b</strong></p></td>
+</tr>
+</tbody>
+</table>
+
+<p>The x86 architecture consists of the following unprivileged integer registers.</p>
+<table>
+<colgroup>
+<col width="50%">
+<col width="50%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left"><p><strong>eax</strong></p></td>
+<td align="left"><p>Accumulator</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p><strong>ebx</strong></p></td>
+<td align="left"><p>Base register</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p><strong>ecx</strong></p></td>
+<td align="left"><p>Counter register</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p><strong>edx</strong></p></td>
+<td align="left"><p>Data register - can be used for I/O port access and arithmetic functions</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p><strong>esi</strong></p></td>
+<td align="left"><p>Source index register</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p><strong>edi</strong></p></td>
+<td align="left"><p>Destination index register</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p><strong>ebp</strong></p></td>
+<td align="left"><p>Base pointer register</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p><strong>esp</strong></p></td>
+<td align="left"><p>Stack pointer</p></td>
+</tr>
+</tbody>
+</table>
+
+<p>Two other registers are important for the processor&#39;s current state.</p>
+<table>
+<colgroup>
+<col width="50%">
+<col width="50%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left"><p><strong>eip</strong></p></td>
+<td align="left"><p>instruction pointer</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p><strong>flags</strong></p></td>
+<td align="left"><p>flags</p></td>
+</tr>
+</tbody>
+</table>
+
+<p>Operations that output to a 32-bit subregister are automatically zero-extended to the entire 64-bit register. Operations that output to 8-bit or 16-bit subregisters are <em>not</em> zero-extended (this is compatible x86 behavior).</p>
+<p>The high 8 bits of <strong>ax</strong>, <strong>bx</strong>, <strong>cx</strong>, and <strong>dx</strong> are still addressable as <strong>ah</strong>, <strong>bh</strong>, <strong>ch</strong>, <strong>dh</strong>, but cannot be used with all types of operands.</p>
+<p>The instruction pointer, <strong>eip</strong>, and <strong>flags</strong> register have been extended to 64 bits (<strong>rip</strong> and <strong>rflags</strong>, respectively) as well.</p>
+<p>The x64 processor also provides several sets of floating-point registers:</p>
+<ul>
+<li><p>Eight 80-bit x87 registers.</p>
+</li>
+<li><p>Eight 64-bit MMX registers. (These overlap with the x87 registers.)</p>
+</li>
+<li><p>The original set of eight 128-bit SSE registers is increased to sixteen.</p>
+</li>
+</ul>
+<h3 id="span-idcallingconventionsspanspan-idcallingconventionsspanspan-idcallingconventionsspancalling-conventions"><span id="Calling_Conventions"></span><span id="calling_conventions"></span><span id="CALLING_CONVENTIONS"></span>Calling Conventions</h3>
+<p>Unlike the x86, the C/C++ compiler only supports one calling convention on x64. This calling convention takes advantage of the increased number of registers available on x64:</p>
+<ul>
+<li><p>The first four integer or pointer parameters are passed in the <strong>rcx</strong>, <strong>rdx</strong>, <strong>r8</strong>, and <strong>r9</strong> registers.</p>
+</li>
+<li><p>The first four floating-point parameters are passed in the first four SSE registers, <strong>xmm0</strong>-<strong>xmm3</strong>.</p>
+</li>
+<li><p>The caller reserves space on the stack for arguments passed in registers. The called function can use this space to spill the contents of registers to the stack.</p>
+</li>
+<li><p>Any additional arguments are passed on the stack.</p>
+</li>
+<li><p>An integer or pointer return value is returned in the <strong>rax</strong> register, while a floating-point return value is returned in <strong>xmm0</strong>.</p>
+</li>
+<li><p><strong>rax</strong>, <strong>rcx</strong>, <strong>rdx</strong>, <strong>r8</strong>-<strong>r11</strong> are volatile.</p>
+</li>
+<li><p><strong>rbx</strong>, <strong>rbp</strong>, <strong>rdi</strong>, <strong>rsi</strong>, <strong>r12</strong>-<strong>r15</strong> are nonvolatile.</p>
+</li>
+</ul>
+<p>The calling convention for C++ is very similar: the <strong>this</strong> pointer is passed as an implicit first parameter. The next three parameters are passed in registers, while the rest are passed on the stack.</p>
+<h3 id="span-idaddressingmodesspanspan-idaddressingmodesspanspan-idaddressingmodesspanaddressing-modes"><span id="Addressing_Modes"></span><span id="addressing_modes"></span><span id="ADDRESSING_MODES"></span>Addressing Modes</h3>
+<p>The addressing modes in 64-bit mode are similar to, but not identical to, x86.</p>
+<ul>
+<li><p>Instructions that refer to 64-bit registers are automatically performed with 64-bit precision. (For example <strong>mov rax, [rbx]</strong> moves 8 bytes beginning at <strong>rbx</strong> into <strong>rax</strong>.)</p>
+</li>
+<li><p>A special form of the <strong>mov</strong> instruction has been added for 64-bit immediate constants or constant addresses. For all other instructions, immediate constants or constant addresses are still 32 bits.</p>
+</li>
+<li><p>x64 provides a new <strong>rip</strong>-relative addressing mode. Instructions that refer to a single constant address are encoded as offsets from <strong>rip</strong>. For example, the <strong>mov rax, [</strong><em>addr</em><strong>]</strong> instruction moves 8 bytes beginning at <em>addr</em> + <strong>rip</strong> to <strong>rax</strong>.</p>
+</li>
+</ul>
+<p>Instructions, such as <strong>jmp</strong>, <strong>call</strong>, <strong>push</strong>, and <strong>pop</strong>, that implicitly refer to the instruction pointer and the stack pointer treat them as 64 bits registers on x64.</p>
+<h2 id="see-also">See Also</h2>
+<p><a href="https://en.wikipedia.org/wiki/X86-64" data-linktype="external">X86-64 Wikipedia</a></p>
+<p><a href="https://developer.amd.com/resources/" data-linktype="external">AMD 64 Developer Resources</a></p>
+
+				<!-- </content> -->
+
+
+			</main>
+
+
+	<div class="footerContainer" >
+<footer id="footer" data-bi-name="footer" class="footer-layout" role="contentinfo">
+
+    <a data-mscc-ic="false" id="locale-selector-link" href="#" data-bi-name="select-locale"></a>
+
+    <ul class="links" data-bi-name="footerlinks">
+		<li><a data-mscc-ic="false" href="https://docs.microsoft.com/previous-versions/" data-bi-name="archivelink">Previous Version Docs</a></li>
+		<li><a data-mscc-ic="false" href="https://docs.microsoft.com/teamblog" data-bi-name="bloglink">Blog</a></li>
+		<li><a data-mscc-ic="false" href="https://docs.microsoft.com/contribute" data-bi-name="contributorGuide">Contribute</a></li>
+			<li><a data-mscc-ic="false" href="https://go.microsoft.com/fwlink/?LinkId=521839" data-bi-name="privacy">Privacy &amp; Cookies</a></li>
+		<li><a data-mscc-ic="false" href="/en-us/legal/termsofuse" data-bi-name="termsofuse">Terms of Use</a></li>
+		<li><a data-mscc-ic="false" href="https://aka.ms/sitefeedback" data-bi-name="feedback">Site Feedback</a></li>
+		<li><a data-mscc-ic="false" href="https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/EN-US.aspx" data-bi-name="trademarks">Trademarks</a></li>
+    </ul>
+</footer>	</div>
+
+	<div class="action-panel"></div>
+</body>
+</html>
