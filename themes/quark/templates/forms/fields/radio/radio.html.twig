@@ -19,7 +19,7 @@
                    {% if required %}required="required"{% endif %}
             />
             <i class="form-icon"></i>
-            {{ text|t|raw }}
+            {% if grav.twig.twig.filters['tu'] is defined %}{{ text|tu|raw }}{% else %}{{ text|t|raw }}{% endif %}
             </label>
         </div>
     {% endfor %}

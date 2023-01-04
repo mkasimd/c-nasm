@@ -1,27 +1,9 @@
-# v2.0.4
-## 09/29/2021
-
-1. [](#new)
-   * Added simple gallery modular page for `lightbox-gallery` plugin
-2. [](#bugfix)
-    * Fixed `radio` form field error when admin isn't installed
-    * Translate `grid size` text
-
-# v2.0.3
-## 06/08/2020
-
-1. [](#improved)
-    * Updated some JS libraries
-    * Simplified navigation macro
-    * Use `site.title` in logo alt text [#139](https://github.com/getgrav/grav-theme-quark/pull/109)
-
 # v2.0.2
 ## 08/09/2019
 
 1. [](#improved)
     * Allow for overriding of `{% block content %}{% endblock %}`
     * Improved default `.table` styling
-    * Simplified navigation macro
 1. [](#bugfix)
     * Fixed issue with Prism Highlight [prism-highlight#1](https://github.com/trilbymedia/grav-plugin-prism-highlight/issues/1)
     * Use slug for onpage links [#115](https://github.com/getgrav/grav-theme-quark/issues/115)

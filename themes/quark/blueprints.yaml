@@ -1,13 +1,11 @@
 name: Quark
-slug: quark
-type: theme
-version: 2.0.4
+version: 2.0.2
 description: New Grav Default Theme
-icon: microchip
+icon:  microchip
 author:
   name: Team Grav
   email: devs@getgrav.org
-  url: https://getgrav.org
+  url: http://getgrav.org
 homepage: https://github.com/getgrav/grav-theme-quark
 demo: https://demo.getgrav.org/onepage-skeleton
 keywords: quark, spectre, theme, core, modern, fast, responsive, html5, css3
@@ -35,7 +33,7 @@ form:
 
     grid-size:
       type: select
-      label: THEME_QUARK.ADMIN.GRID_SIZE
+      label: Grid size
       help: The maximum width of the theme
       size: small
       options:
