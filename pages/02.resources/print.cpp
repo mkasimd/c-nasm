@@ -16,7 +16,7 @@
 */
 
 // forward declaration of functions
-long unsigned strlen(char*);
+long unsigned int strlen(char*);
 
 // setting environment specific values and functions
 #ifndef NULL
