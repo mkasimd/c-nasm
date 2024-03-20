@@ -63,15 +63,7 @@ long unsigned int strlen(char*);
 #define STR(x) STR_IMPL_(x) // indirection to expand argument macros
 
 #if ARCH == 64 && OS == 'L'
-/* Assembly freaks out many people as is,
- * so let's use the power of macros here
- * and make the assembly code below much easier to read
- * through macro expansions within the asm block
- */
-  #define WRITEOUT "mov $" STR(SYSWRITE) ", %rax\n\t"
-  #define READ "mov $" STR(SYSREAD) ", %rax\n\t"
-
-   // forward-declare architecture-specific functions
+  // forward-declare architecture-specific functions
   int print_64(int FILE, char* msg, int len);
   int input_64(int FILE, char* dst, int len);
 
@@ -146,33 +138,36 @@ long unsigned int strlen(char* str) {
 #if defined(__x86_64__)
 // As per x64 GCC calling convention: rdi, rsi, rdx, rcx, r8, r9, stack...
 int print_64(int FILE, char* msg, int len) {
+ int ret;
   __asm__(      // FILE, msg & len in the correct registers already
-      WRITEOUT  // see macro definition above, if this looks too abstract
       "syscall" //
+      : "=r"(ret)
+      : "a"(SYSWRITE)
   );
-  register int ret asm("rax");
   return ret;
 }
 
 int input_64(int FILE, char* dst, int len) {
-  asm(          //
-      READ      //
-      "syscall" //
-  );            // return value in RAX
-  register int ret asm("rax");
-  dst[ret] = '\0';
+  int ret = 0;
+  __asm__(
+      "syscall"
+      : "=r"(ret)
+      : "a"(SYSREAD)
+  );
+  dst[res] = '\0';
   return ret;
 }
 #endif
 
 #if defined(__i386__)
 int print_32(int FILE, char* msg, int len) {
-  __asm__("int $0x80" // system interrupt
-          :
+ int ret;
+  __asm__(
+          "int $0x80" // system interrupt
+          : "=r"(ret)
           : "a"(SYSWRITE), "b"(FILE), "c"(msg),
             "d"(len)
   ); // set register values: eax = SYS_WRITE, ebx = FILE, ...
-  register int ret asm("eax");
   return ret;
 }
 
