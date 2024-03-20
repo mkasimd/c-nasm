@@ -154,7 +154,7 @@ int input_64(int FILE, char* dst, int len) {
       : "=r"(ret)
       : "a"(SYSREAD)
   );
-  dst[res] = '\0';
+  dst[ret] = '\0';
   return ret;
 }
 #endif
